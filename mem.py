@@ -25,7 +25,8 @@ if __name__ == "__main__":
     mem_size_stats = {
         "point_count": point_count,
         "mem_bytes": point_count * 1081 * 4,
-        "mem_mb": point_count * 1081 * 4
+        "mem_mb": point_count * 1081 * 4 / (1000 * 1000),
+        "mem_mib": point_count * 1081 * 4 / (1024 * 1024)
     }
     print(mem_size_stats)
     
